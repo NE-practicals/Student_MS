@@ -43,5 +43,16 @@ public:
         head=newStudent;
         
     }
+    
+    Student* findStudent(string name){
+        Student* currrent=head;
+        while (currrent!=nullptr) {
+            if (currrent->studentName==name ) {
+                return currrent;
+            }
+            currrent=currrent->next;
+        }
+        return nullptr;
+    }
     };
 

@@ -119,7 +119,7 @@ public:
 
     // Function to display the linked list in a table format
     void displayList() {
-        cout << left << setw(20) << "Student Name" << "Courses\n";
+        cout << left << setw(20) << "Student's  Name" << "Courses\n";
         cout << "--------------------------------------------------\n";
 
         Student* current = head;
@@ -163,7 +163,9 @@ int main() {
     vector<Course> courseList = {
         Course("Math", true),
         Course("Physics", true),
-        Course("Chemistry", false)
+        Course("Chemistry", false),
+        Course("Java",true),
+        Course("DSA", true)
     };
 
     char option;
